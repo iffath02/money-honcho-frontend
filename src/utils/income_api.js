@@ -1,9 +1,9 @@
 import { getToken } from "./users_service"
 import axios from "axios"
 
-export function allExpenses(user_id) {
+export function allIncomes(user_id) {
   return axios
-    .get(`/api/expenses/${user_id}`, {
+    .get(`/api/incomes/${user_id}`, {
       headers: {
         Authorization: `Bearer ${getToken()}`,
       },
@@ -11,9 +11,9 @@ export function allExpenses(user_id) {
     .then(res => res.data)
 }
 
-export function createExpense(user_id, expenseData) {
+export function createIncome(user_id, incomeData) {
   return axios
-    .post(`/api/expenses/${user_id}`, expenseData, {
+    .post(`/api/incomes/${user_id}`, incomeData, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${getToken()}`,
@@ -22,9 +22,9 @@ export function createExpense(user_id, expenseData) {
     .then(res => res.data)
 }
 
-export function expensesChartData(user_id) {
+export function incomesChartData(user_id) {
   return axios
-    .get(`/api/expenses/chart/${user_id}`, {
+    .get(`/api/incomes/chart/${user_id}`, {
       headers: {
         Authorization: `Bearer ${getToken()}`,
       },
@@ -32,8 +32,8 @@ export function expensesChartData(user_id) {
     .then(res => res.data)
 }
 
-export function deleteExpense(id) {
-  return axios.delete(`/api/expenses/${id}`, {
+export function deleteIncome(id) {
+  return axios.delete(`/api/incomes/${id}`, {
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },
