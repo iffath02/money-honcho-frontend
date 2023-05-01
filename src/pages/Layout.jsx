@@ -24,9 +24,6 @@ export default function Layout(props) {
             <li>
               <Link to="/accounts">Accounts</Link>
             </li>
-            {/* <li>
-              <Link to="/logout">Logout</Link>
-            </li> */}
           </ul>
         </nav>
       </div>

@@ -27,8 +27,8 @@ function App() {
       {user ? (
         <Layout onLogout={logout}>
           <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/expense" element={<Expense />} />
+            <Route path="/" element={<Dashboard user_id={user.id} />} />
+            <Route path="/expense" element={<Expense user_id={user.id} />} />
             <Route path="/income" element={<Income />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/accounts" element={<Accounts />} />
