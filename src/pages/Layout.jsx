@@ -24,13 +24,15 @@ export default function Layout(props) {
             <li>
               <Link to="/accounts">Accounts</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/logout">Logout</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
-      <div className="header"></div>
+      <div className="header">
+        <button onClick={e => props.onLogout()}>Logout</button>
+      </div>
       <div className="main">{props.children}</div>
     </div>
   )
