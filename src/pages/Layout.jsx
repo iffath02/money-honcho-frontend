@@ -1,9 +1,8 @@
 import "./Layout.css"
 import logo from "../money-honcho.png"
-import { Routes, Route, Link } from "react-router-dom"
-import DashboardPage from "./DashBoardPage"
+import { Link } from "react-router-dom"
 
-export default function Layout() {
+export default function Layout(props) {
   return (
     <div className="grid-container">
       <div className="sidebar">
@@ -32,10 +31,7 @@ export default function Layout() {
         </nav>
       </div>
       <div className="header"></div>
-      <div className="main">{<DashboardPage />}</div>
-      <Routes>
-        <Route path="/" element={<DashboardPage />} />
-      </Routes>
+      <div className="main">{props.children}</div>
     </div>
   )
 }
