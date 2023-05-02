@@ -40,4 +40,4 @@ Some libraries used that deserves mentioning.
 ## Screenshots
 
 1. Login
-   <img title="Login" src="https://github.com/iffath02/money-honcho-frontend/blob/main/screenshots/screenshot1.png" width="100%>
+   <img title="Landing" src="https://github.com/iffath02/money-honcho-frontend/blob/main/screenshots/screenshot1.png" width="100%">
