@@ -37,7 +37,23 @@ Some libraries used that deserves mentioning.
 - [react-chartjs-2](https://react-chartjs-2.js.org/)
 - [Prime React](https://www.primefaces.org/primereact/)
 
+## Wireframes
+
+Database Schema
+<img title="Landing" src="https://github.com/iffath02/money-honcho-frontend/blob/main/screenshots/schema.png" width="100%">
+
+[WireFrame is available here](https://whimsical.com/money-honcho-YEyHSwhiQgEqb4XUu2cDaP)
+
 ## Screenshots
 
 1. Login
    <img title="Landing" src="https://github.com/iffath02/money-honcho-frontend/blob/main/screenshots/screenshot1.png" width="100%">
+
+2. DashBoard
+   <img title="Landing" src="https://github.com/iffath02/money-honcho-frontend/blob/main/screenshots/screenshot2.png" width="100%">
+
+3. Expense
+   <img title="Landing" src="https://github.com/iffath02/money-honcho-frontend/blob/main/screenshots/screenshot3.png" width="100%">
+
+4.Income
+<img title="Landing" src="https://github.com/iffath02/money-honcho-frontend/blob/main/screenshots/screenshot4.png" width="100%">
