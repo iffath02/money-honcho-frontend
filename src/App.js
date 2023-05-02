@@ -29,8 +29,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard user_id={user.id} />} />
             <Route path="/expense" element={<Expense user_id={user.id} />} />
-            <Route path="/income" element={<Income />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/income" element={<Income user_id={user.id} />} />
+            <Route path="/profile" element={<Profile user_id={user.id} />} />
             <Route path="/accounts" element={<Accounts />} />
           </Routes>
         </Layout>

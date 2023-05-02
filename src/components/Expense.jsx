@@ -23,11 +23,11 @@ export default function Expense({ user_id }) {
 
   useEffect(() => {
     expensesChartData(user_id).then(setExpenseChart)
-  }, [data])
+  }, [data, expenses])
 
   useEffect(() => {
     allExpenses(user_id).then(setExpenses)
-  }, [data])
+  }, [data, expenses])
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -42,7 +42,7 @@ export default function Expense({ user_id }) {
 
   const handleClick = id => {
     deleteExpense(id).then(() =>
-      setData(data.filter(expense => expense.id !== id))
+      setExpenses(expenses.filter(expense => expense.id !== id))
     )
   }
 
@@ -82,7 +82,7 @@ export default function Expense({ user_id }) {
           <div key={expense.id} className="expenses-list">
             <span>{expense.spent_on}</span>
             <span>${expense.amount}</span>
-            <button onClick={() => handleClick(expense.id)}>Delete</button>
+            <TiDelete onClick={() => handleClick(expense.id)}>Delete</TiDelete>
           </div>
         ))}
       </section>

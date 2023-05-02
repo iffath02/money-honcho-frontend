@@ -63,6 +63,7 @@ ul {
 li {
   padding: 20px;
   text-align: center;
+  border-radius: 10px;
 }
 
 a {
@@ -70,7 +71,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+li:hover {
   background-color: #3d0040;
   transition: background-color 0.3s ease-in-out;
 }

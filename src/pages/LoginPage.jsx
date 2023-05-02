@@ -1,5 +1,5 @@
 import { useState } from "react"
-import userValidator from "../utils/users_api"
+import { userValidator } from "../utils/users_api"
 export default function LoginPage({ onLogin }) {
   const [formData, setFormData] = useState({})
   const [error, setError] = useState("")

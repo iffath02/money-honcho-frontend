@@ -4,7 +4,7 @@ import { Chart as ChartJS } from "chart.js/auto"
 
 const PieChart = ({ data }) => {
   const chartData = {
-    labels: data.map(d => d.category),
+    labels: data.map(d => d.category || d.type),
     datasets: [
       {
         data: data.map(d => d.total_amount),
