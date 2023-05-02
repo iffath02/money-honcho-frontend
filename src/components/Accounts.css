@@ -1,0 +1,25 @@
+.income-account-list {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.income-account-item {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.income-account-type {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.income-account-amount {
+  font-size: 1.2rem;
+}

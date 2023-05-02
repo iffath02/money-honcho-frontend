@@ -6,11 +6,5 @@ export function userValidator(data) {
 }
 
 export function userDetails(user_id) {
-  return axios
-    .get(`/api/users/${user_id}`, {
-      headers: {
-        Authorization: `Bearer ${getToken()}`,
-      },
-    })
-    .then(res => res.data)
+  return axios.get(`/api/users/${user_id}`).then(res => res.data)
 }

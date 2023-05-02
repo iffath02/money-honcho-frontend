@@ -22,6 +22,8 @@ function App() {
     setUser(null)
   }
 
+  console.log(user)
+
   return (
     <div className="App">
       {user ? (
@@ -31,7 +33,7 @@ function App() {
             <Route path="/expense" element={<Expense user_id={user.id} />} />
             <Route path="/income" element={<Income user_id={user.id} />} />
             <Route path="/profile" element={<Profile user_id={user.id} />} />
-            <Route path="/accounts" element={<Accounts />} />
+            <Route path="/accounts" element={<Accounts user_id={user.id} />} />
           </Routes>
         </Layout>
       ) : (

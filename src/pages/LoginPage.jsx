@@ -1,5 +1,8 @@
 import { useState } from "react"
 import { userValidator } from "../utils/users_api"
+import logo from "../money-honcho.png"
+import "./LoginPage.css"
+
 export default function LoginPage({ onLogin }) {
   const [formData, setFormData] = useState({})
   const [error, setError] = useState("")
@@ -25,8 +28,8 @@ export default function LoginPage({ onLogin }) {
   }
 
   return (
-    <section>
-      <h1>login</h1>
+    <section className="login">
+      <img src={logo} alt="" />
       <p>{error}</p>
       <form onSubmit={handleSubmit} action="">
         <label htmlFor="">email</label>

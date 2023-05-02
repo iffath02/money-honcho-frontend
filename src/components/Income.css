@@ -80,7 +80,7 @@
   border-radius: 10px;
 }
 
-input[type="text"],
+.add-income input[type="text"],
 input[type="number"] {
   padding: 10px;
   margin-bottom: 10px;
