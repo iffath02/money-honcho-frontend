@@ -23,7 +23,7 @@ export default function Dashboard({ user_id }) {
         {expenses.map(expense => (
           <div key={expense.id}>
             <span>{expense.spent_on}</span>
-            <span>${expense.amount}</span>
+            <span style={{ color: "red" }}>${expense.amount}</span>
           </div>
         ))}
       </section>

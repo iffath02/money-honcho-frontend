@@ -6,24 +6,146 @@
   justify-content: center;
 }
 
-.incomes {
+.add-income h1 {
+  color: purple;
+}
+
+.add-income form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.add-income form * {
+  margin-bottom: 10px;
+}
+
+.add-income form button {
+  margin-top: 10px;
+}
+
+.add-income {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  text-align: center;
+  width: 70%;
+}
+
+.add-income select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: purple;
+}
+
+.add-income select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.3);
+}
+
+.add-income select option {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+  background-color: #fff;
+}
+
+.add-income select::-ms-expand {
+  display: none;
+}
+
+.add-income select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.add-income select::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.add-income select::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: purple;
+}
+
+.add-income button {
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-income button:hover {
+  background-color: #3d0040;
+}
+
+.incomes {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+  background-color: #fff;
+  max-height: 400px;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+.incomes h1 {
+  text-align: center;
+  color: purple;
+  margin-top: 0;
 }
 
 .incomes-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d8bfd8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 98%;
 }
 
-.incomes-list > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f2f2f2;
-  padding: 10px;
-  border-radius: 5px;
-  width: 300px;
+.incomes-list span:first-child {
+  flex: 1;
+  font-size: 15px;
+  color: purple;
+}
+
+.incomes-list span:last-child {
+  flex: 1;
+  text-align: right;
+}
+
+.expenses-list svg {
+  cursor: pointer;
 }

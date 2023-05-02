@@ -44,6 +44,19 @@
   font-size: 36px;
 }
 
+.header button {
+  background-color: #fff;
+  color: #5a1a62;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  margin-top: -45px;
+  margin-right: 20px;
+}
+
 .main {
   grid-area: main;
   padding: 20px;

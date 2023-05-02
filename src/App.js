@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       {user ? (
-        <Layout onLogout={logout}>
+        <Layout user={user} onLogout={logout}>
           <Routes>
             <Route path="/" element={<Dashboard user_id={user.id} />} />
             <Route path="/expense" element={<Expense user_id={user.id} />} />

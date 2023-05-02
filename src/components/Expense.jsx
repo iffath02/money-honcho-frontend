@@ -47,42 +47,51 @@ export default function Expense({ user_id }) {
   }
 
   return (
-    <div className="expense-wrapper">
-      <section className="add-expense">
-        <form onSubmit={handleSubmit}>
-          <select onChange={handleChange} name="category_id">
-            {categories.map(category => (
-              <option key={category.id} value={category.id}>
-                {category.name}
-              </option>
-            ))}
-          </select>
-          <input
-            onChange={handleChange}
-            type="text"
-            name="spent_on"
-            placeholder="Spent on"
-          />
+    <div>
+      <div className="expense-wrapper">
+        <section className="add-expense">
+          <h1>Add a New Expense</h1>
+          <form onSubmit={handleSubmit}>
+            <select onChange={handleChange} name="category_id">
+              {categories.map(category => (
+                <option key={category.id} value={category.id}>
+                  {category.name}
+                </option>
+              ))}
+            </select>
+            <input
+              onChange={handleChange}
+              type="text"
+              name="spent_on"
+              placeholder="Spent on"
+            />
 
-          <input
-            onChange={handleChange}
-            type="number"
-            name="amount"
-            placeholder="Amount"
-          />
-          <button>+ Add Expense</button>
-        </form>
-      </section>
-      <section className="display-chart">
-        <PieChart data={expenseChart} />
-      </section>
+            <input
+              onChange={handleChange}
+              type="number"
+              name="amount"
+              placeholder="Amount"
+            />
+            <button>+ Add Expense</button>
+          </form>
+        </section>
+        <section className="display-chart">
+          <PieChart data={expenseChart} />
+        </section>
+      </div>
       <section className="expenses">
-        <h1>Expenses</h1>
+        <h1>Delete Expenses</h1>
         {expenses.map(expense => (
           <div key={expense.id} className="expenses-list">
+            <span>{expense.category}</span>
             <span>{expense.spent_on}</span>
-            <span>${expense.amount}</span>
-            <TiDelete onClick={() => handleClick(expense.id)}>Delete</TiDelete>
+            <span style={{ color: "red" }}>${expense.amount}</span>
+            <TiDelete
+              style={{ fontSize: "2.5em", marginLeft: "10px" }}
+              onClick={() => handleClick(expense.id)}
+            >
+              Delete
+            </TiDelete>
           </div>
         ))}
       </section>

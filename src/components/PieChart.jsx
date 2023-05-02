@@ -9,17 +9,19 @@ const PieChart = ({ data }) => {
       {
         data: data.map(d => d.total_amount),
         backgroundColor: [
-          "#FF6384",
-          "#36A2EB",
-          "#FFCE56",
-          "#8e5ea2",
           "#3cba9f",
+          "#d0f0c0",
+          "#c71585",
+          "#800080",
+          "#fdfd96",
         ],
       },
     ],
   }
 
-  return <Pie data={chartData} />
+  return (
+    <Pie data={chartData} style={{ maxWidth: "500px", maxHeight: "500px" }} />
+  )
 }
 
 export default PieChart

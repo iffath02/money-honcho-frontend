@@ -28,6 +28,7 @@ export default function Layout(props) {
         </nav>
       </div>
       <div className="header">
+        <h1>Welcome {props.user.name}</h1>
         <button onClick={e => props.onLogout()}>Logout</button>
       </div>
       <div className="main">{props.children}</div>
