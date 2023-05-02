@@ -36,3 +36,8 @@ Some libraries used that deserves mentioning.
 
 - [react-chartjs-2](https://react-chartjs-2.js.org/)
 - [Prime React](https://www.primefaces.org/primereact/)
+
+## Screenshots
+
+1. Login
+   <img title="Login" src="https://github.com/iffath02/money-honcho-frontend/blob/main/screenshots/screenshot1.png" width="100%>
