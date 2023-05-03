@@ -17,7 +17,7 @@ Basic features include -
 
 ## Install Instruction
 
-- At first download or clone [Money Honcho 💰 Express](https://github.com/iffath02/money-honcho-backend) backend.
+- At first download or clone [Money Honcho 💰 Backend](https://github.com/iffath02/money-honcho-backend) built using Express and PostgreSQL.
 - Setup and configure the backend.
 - Considering the backend is up and running, now download or clone this repo.
 - Open terminal and `cd` into the directory.
