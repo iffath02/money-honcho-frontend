@@ -35,7 +35,7 @@ Basic features include -
 Some libraries used that deserves mentioning.
 
 - [react-chartjs-2](https://react-chartjs-2.js.org/)
-- [Prime React](https://www.primefaces.org/primereact/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 ## Wireframes
 
