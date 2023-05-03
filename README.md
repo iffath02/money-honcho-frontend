@@ -2,7 +2,7 @@
 
 Money Honcho is a simple income/expense tracker app built with React
 
-This is the frontend for [Money Honcho 💰 Express](https://github.com/iffath02/money-honcho-backend) backend. You can find the backend repo in the above link.
+This is the frontend for [Money Honcho 💰 Backend](https://github.com/iffath02/money-honcho-backend) built using Express and PostgreSQL. You can find the backend repo in the above link.
 
 ## Features
 
@@ -17,7 +17,7 @@ Basic features include -
 
 ## Install Instruction
 
-- At first download or clone [Money Honcho 💰 Backend](https://github.com/iffath02/money-honcho-backend) built using Express and PostgreSQL.
+- At first download or clone [Money Honcho 💰 Backend](https://github.com/iffath02/money-honcho-backend)
 - Setup and configure the backend.
 - Considering the backend is up and running, now download or clone this repo.
 - Open terminal and `cd` into the directory.
