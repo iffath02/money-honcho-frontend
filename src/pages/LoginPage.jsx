@@ -2,6 +2,7 @@ import { useState } from "react"
 import { userValidator } from "../utils/users_api"
 import logo from "../money-honcho.png"
 import "./LoginPage.css"
+import { getUser } from "../utils/users_service"
 
 export default function LoginPage({ onLogin }) {
   const [formData, setFormData] = useState({})
@@ -10,11 +11,13 @@ export default function LoginPage({ onLogin }) {
   const handleSubmit = e => {
     e.preventDefault()
     if (formData.email && formData.password) {
+      console.log(formData)
       userValidator(formData)
         .then(token => {
           console.log(token)
           localStorage.setItem("token", token)
-          onLogin(formData)
+          let user = getUser()
+          onLogin(user)
         })
         .catch(err => console.log(err))
     } else {

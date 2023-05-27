@@ -1,0 +1,55 @@
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #1f3557,
+    #27335f,
+    #362e64,
+    #472765,
+    #5a1a62
+  );
+}
+
+.user-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.user-login h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.user-login img {
+  width: 30%;
+}
+
+.user-login .links {
+  display: flex;
+}
+
+.user-login .links span {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  color: white;
+  font-size: 25px;
+}
+
+.user-login .links button {
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.user-login .links button:hover {
+  text-decoration: underline;
+}

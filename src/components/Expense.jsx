@@ -34,8 +34,6 @@ export default function Expense({ user_id }) {
     createExpense(user_id, formData).then(res => setData(res))
   }
 
-  console.log(data)
-
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
