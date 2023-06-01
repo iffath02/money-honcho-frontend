@@ -12,9 +12,13 @@ export function getToken() {
   if (token === null) return null
 
   const payload = getPayload(token)
-  if (payload.exp < Date.now() / 1000) {
-    //token expired
-    localStorage.removeItem(token)
+  if (
+    !payload ||
+    typeof payload.exp === "undefined" ||
+    payload.exp < Date.now() / 1000
+  ) {
+    // Token is expired or invalid
+    localStorage.removeItem("token")
     return null
   }
   return token
