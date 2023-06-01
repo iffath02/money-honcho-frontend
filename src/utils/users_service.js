@@ -1,5 +1,10 @@
 function getPayload(token) {
-  return JSON.parse(window.atob(token.split(".")[1]))
+  try {
+    return JSON.parse(window.atob(token.split(".")[1]))
+  } catch (error) {
+    // Handle parsing error, such as returning null or throwing a specific error
+    return null
+  }
 }
 
 export function getToken() {
